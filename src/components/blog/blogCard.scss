@@ -1,0 +1,41 @@
+.blog-card-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: gray;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+
+    &.green {
+        border: 2px solid green;
+    }
+
+    &.red {
+        border: 2px solid red;
+    }
+
+    .blog-card-main-title {
+        font-weight: bold;
+    }
+
+    .blog-card-main-content {
+        max-width: 350px;
+    }
+
+    .blog-card-main-bottom {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-right: 20px;
+        .blog-card-button {
+            background: orange;
+            border: 0;
+            border-radius: 20px;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}

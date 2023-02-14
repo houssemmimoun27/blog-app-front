@@ -1,0 +1,60 @@
+@import "src/components/blog/blogCard.scss";
+@import "src/components/inputSearch/inputSearch.scss";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  > div:first-child,
+  > div:first-child > div:first-of-type {
+    min-height: 100vh;
+  }
+}
+
+.blog-list-main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+  input {
+    width: 300px;
+  }
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 20px;
+  row-gap: 20px;
+  padding: 10px;
+
+  .blogs-no-result {
+    color: black;
+  }
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: auto auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: auto;
+  }
+}
+
+.add-blog-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+
+  input,
+  textarea {
+    display: block;
+    margin-top: 10px;
+    width: 300px;
+  }
+}
